@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso PHP</title>
+	<link href="css/normalize.css" rel="preload" as="style">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="preload" as="style">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<a href="index.html">
+			<img class="header__logo" src="img/logo.png" alt="logotipo">
+		</a>
+	</header>
+	<nav class="nav">
+		<a class="nav__link nav__link--active" href="index.html">Tienda</a>
+		<a class="nav__link" href="nosotros.html">Nosotros</a>
+	</nav>
+	
+	<main class="container">
+		<h1>ReactJS</h1>
+		
+		<div class="camisa">
+			<img src="img/1.jpg" class="camisa__img">
+			<div class="camisa__contenido">
+				<p class="camisa__texto">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+				<form class="formulario">
+						<select class="formulario__select formulario__campo">
+							<option disabled selected >-- Seleccionar Talla --</option>
+							<option>Grande</option>
+							<option>Mediana</option>
+							<option>Chica</option>
+						</select>
+						<input type="number" class="formulario__cantidad formulario__campo" min="1" placeholder="Cantidad">
+						<button class="botonn" type="submit">Agregar al carrito</button>
+				</form>
+			</div>
+		</div>
+	</main>
+	
+	
+	<footer class="footer">
+		<p class="footer__text">Todos los derechos reservados a Federico Marasco 2022</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Cafe</title>
+	<!-- GOOGLE FONT -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<!-- NORMALIZE -->
+	<link href="css/normalize.css" rel="stylesheet">
+	<!-- CSS -->
+	<link href="css/style.css" rel="stylesheet">
+	
+	<!-- PREFETCH -->
+	<link rel="prefetch" href="nosotros.html" as="document">
+	<!-- PRELOAD -->
+	<link href="css/normalize.css" rel="preload" as="style">
+	<link href="css/style.css" rel="preload" as="style">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fasthand&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+	<link rel="preload" href="img/blog3.jpg" as="image">
+</head>
+<body>
+   <header class="header">
+		<div class="container">
+		  <div class="header__navbar">
+			<a class="logo" href="index.html">
+				<h1 class="logo__nombre no-margin">Blog<span class="logo__bold">deCafe</span></h1>
+			</a>
+			<nav class="nav">
+			  <a class="nav__enlace" href="nosotros.html">Nosotros</a>
+			  <a class="nav__enlace" href="cursos.html">Cursos</a>
+			  <a class="nav__enlace" href="contacto.html">Contacto</a>
+			</nav>
+		  </div>
+		</div>
+		<div class="header__text">
+		  <h1 class="no-margin">Blog de cafe</h1>
+		  <p class="no-margin">Todo sobre cursos y cafe</p>
+		</div>
+   </header>
+   <div class="container contenido-principal">
+	<main class="blog">
+	  <h3 class="">Nuestro blog</h3>
+	  <div class="entrada">
+		<div class="entrada__img">
+			<picture>
+				<source srcset="img/blog1.webp" type="image/webp">
+				<img loading="lazy" src="img/blog1.jpg" alt="imagen-blog">
+			</picture>
+		</div>
+		<div class="entrada__contenido">
+			<h3 class="no-margin">Tipos de granos</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt est vel laudantium quae sint minus assumenda quam, vitae deleniti.</p>
+		</div>
+		<a class="boton boton--primario" href="entrada.html">Leer Mas</a>
+		
+	  </div>
+	  <div class="entrada">
+		<div class="entrada__img">
+			<picture>
+				<source srcset="img/blog2.webp" type="image/webp">
+				<img loading="lazy" src="img/blog2.jpg" alt="imagen-blog">
+			</picture>
+		</div>
+		<div class="entrada__contenido">
+			<h3 class="no-margin">3 Deliciosas recetas de cafe</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt est vel laudantium quae sint minus assumenda quam, vitae deleniti.</p>
+		</div>
+		<a class="boton boton--primario" href="entrada.html">Leer Mas</a>
+		
+	  </div>
+	  <div class="entrada">
+		<div class="entrada__img">
+			<picture>
+				<source srcset="img/blog3.webp" type="image/webp">
+				<img loading="lazy" src="img/blog3.jpg" alt="imagen-blog">
+			</picture>
+		</div>
+		<div class="entrada__contenido">
+			<h3 class="no-margin">Beneficios del cafe</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt est vel laudantium quae sint minus assumenda quam, vitae deleniti.</p>
+		</div>
+		<a class="boton boton--primario" href="entrada.html">Leer Mas</a>
+		
+	  </div>
+	</main>
+	<aside class="sidebar">
+		<h3 class="">Cursos</h3>
+		<ul class="widget-cursos no-padding">
+			<li class="widget-curso">
+				<h4 class="no-margin">Tecnicas de extraccion</h4>
+				<p class="widget-curso__label">Precio: 
+					<span class="widget-curso__info">Gratis</span>
+				</p>
+				<p class="widget-curso__label">Cupo: 
+					<span class="widget-curso__info">20</span>
+				</p>
+				<button class="boton boton--secundario">Ver</button>
+			</li>
+			<li class="widget-curso">
+				<h4 class="no-margin">Como hacer con espuma</h4>
+				<p class="widget-curso__label">Precio: 
+					<span class="widget-curso__info">Gratis</span>
+				</p>
+				<p class="widget-curso__label">Cupo: 
+					<span class="widget-curso__info">20</span>
+				</p>
+				<button class="boton boton--secundario">Ver</button>
+			</li>
+			
+		</ul>
+	</aside>
+   </div>
+   <footer class="footer">
+        <div class="container">
+		  <div class="header__navbar">
+			<a class="logo" href="index.html">
+				<h1 class="logo__nombre no-margin">Blog<span class="logo__bold">deCafe</span></h1>
+			</a>
+			<nav class="nav">
+			  <a class="nav__enlace" href="nosotros.html">Nosotros</a>
+			  <a class="nav__enlace" href="cursos.html">Cursos</a>
+			  <a class="nav__enlace" href="contacto.html">Contacto</a>
+			</nav>
+		  </div>
+		</div>
+   </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

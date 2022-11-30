@@ -1,0 +1,326 @@
+/* -- VARIABLES -- */
+:root{
+    --color-white:#ffffff;
+    --color-grey-light:#dfe9f3;
+    --color-grey:#757575;
+    --color-black:#000000;
+	
+    --color-primary-light:#895e4d;
+    --color-primary:#784d3c;
+    --color-primary-dark:#fff;
+	
+    --color-secondary-light:#fff;
+    --color-secondary:#0097a7;
+    --color-secondary-dark:#fff;
+	
+	--letter-title: 'PT Sans', sans-serif;
+	--letter-primary: 'Open Sans', sans-serif;
+	--letter-secondary: 'Fasthand', cursive;
+
+	--box-shadow-light: 0px 0px 7px 0px rgba(143,143,143,0.74);
+	--box-shadow-bold: 0px 0px 11px 0px rgba(143,143,143,0.74);
+}
+
+/* -- VARIABLES -- */
+.container{
+	width:90%;
+	max-width:100rem;
+	margin:0 auto;
+}
+.no-margin{
+	margin:0;
+}
+.no-padding{
+	padding:0;
+}
+.centrar-texto{
+	text-align:center;
+}
+.flex{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.boton{
+	background-color: var(--color-black);
+	color:var(--color-white);
+	display:block;
+	width:100%;
+	font-family: var(--letter-title);
+	font-weight:700;
+	font-size:1.5rem;
+	text-decoration:none;
+	padding:1rem 3rem;
+	margin-bottom:1rem;
+	border-radius:0rem;
+	text-align:center;
+	text-transform: uppercase;
+	border:none;
+}
+.boton--primario{
+	background-color: var(--color-black);
+}
+.boton--secundario{
+	background-color: var(--color-primary);
+}
+@media (min-width: 768px){
+	.boton{
+	display:inline-block;
+	width:auto;
+	}
+}
+.boton--primario:hover{
+	background-color: var(--color-primary);
+	cursor:pointer;
+}
+.boton--secundario:hover{
+	background-color: var(--color-black);
+	cursor:pointer;
+}
+
+/* -- PREDEFINICIONES -- */
+html{ 
+	font-size:62.5%; 
+	box-sizing:border-box;
+}
+*, *:before, *:after{ 
+	box-sizing:inherit;
+}
+body{
+	font-size:1.6rem; 
+	line-height:2;
+	font-family: var(--letter-primary);
+}
+h1{	
+	font-size:4.8rem;
+}
+h2{	
+	font-size:4rem;	
+}
+h3{	
+	font-size:3.2rem;	
+}
+h4{
+	font-size:2.8rem;
+}
+h1, h2, h3, h4, h5, h6{	
+	text-align:center; 
+	font-family: var(--letter-title);
+	line-height:1.2;
+}
+a{
+	text-decoration:none;
+}
+img{
+	max-width:100%;
+}
+
+/* HEADER */ 
+.header{
+	height:60rem;
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+@media (min-width:768px){
+	.header__navbar{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	}
+}
+.header__navbar{
+padding-top:3rem;
+}
+.header__text{
+	text-align:center;
+	color: var(--color-white);
+	margin-top:12rem;
+}
+.header__text h1{
+	font-family: var(--letter-secondary);
+}
+.logo{
+	color: var(--color-white);
+}
+.logo__nombre{
+	font-weight:400;
+}
+.logo__bold{
+	font-weight:700;	
+}
+@media (min-width:768px){
+	.nav{
+	display:flex;
+	justify-content:space-between;
+	gap:2;
+	}
+	.nav__enlace{
+	padding:.4rem;
+}
+}
+.nav{
+	text-align:center;
+	margin-top:1.5rem;
+}
+.nav__enlace{
+	display:block;
+	color: var(--color-white);
+}
+.nav__enlace:hover{
+	text-decoration:underline;
+}
+
+/* CONTENIDO PRINCIPAL */
+@media (min-width: 768px){
+	.contenido-principal{
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+	grid-column-gap: 2rem;
+	}
+}
+.contenido-principal{
+	margin-top:1rem;
+}
+/* BLOG */
+.entrada{
+	border-bottom:.1rem solid var(--color-grey-light);
+	margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+	border-bottom:none;
+	margin-bottom: 0;
+}
+/* SIDEBAR */
+.sidebar h3{
+	text-align:center;
+	border-bottom: .1rem solid var(--color-grey-light);
+	padding-bottom:3rem;
+}
+.sidebar h4{
+	font-family: var(--letter-primary);
+	font-size:2rem;
+}
+.widget-cursos{
+	list-style:none;
+	text-align:center;
+}
+.widget-curso{
+	text-align:center;
+	margin-bottom:1rem;
+	border-bottom: .1rem solid var(--color-grey-light);
+}
+.widget-curso:last-of-type{
+	margin-bottom:0;
+	border-bottom: none;
+}
+.widget-curso__label{
+	font-weight:700;
+	font-size:1.8rem;
+}
+.widget-curso__info{
+	font-weight:400;
+	font-size:1.6rem;
+}
+@media (min-width: 768px){
+	.widget-curso, .widget-curso h4{
+	text-align:left;
+	}
+}
+/* FOOTER */
+.footer{
+	bottom:0;
+	background-color:var(--color-black);
+	padding-bottom:3rem;
+}
+
+/* NOSOTROS */
+@media (min-width: 768px){
+	.nosotros{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 2rem;
+	margin-bottom:3rem;
+	}
+	.nosotros__text p{
+	margin: 0;
+	}
+}
+
+/* CURSO */ 
+.curso{
+	margin-bottom:3rem;
+	border-bottom: .1rem solid var(--color-grey-light);
+}
+.curso:last-of-type{
+	margin-bottom:0;
+	border-bottom: none;
+}
+.curso__label{
+	font-weight:700;
+	font-size:1.8rem;
+}
+.curso__info{
+	font-weight:400;
+	font-size:1.6rem;
+}
+
+@media (min-width: 768px){
+	.curso{
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	grid-column-gap: 2rem;		
+	}
+
+}
+
+/* ENTRADA */
+.entrada{
+	
+}
+
+/* CONTACTO */ 
+.contacto-bg{
+	background-image: url( ../img/contacto.jpg );
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:50rem;
+}
+.form{
+	background-color:var(--color-white);
+	width:95%;
+	margin: -5rem auto 3rem auto;
+	padding: 5rem 5rem 5rem 5rem;
+}
+.form__campo{
+	margin-top:1rem;
+}
+.form__campo__label{
+	font-weight:700;
+	display:block;
+}
+.form__campo__input{
+	width:100%;
+	border: .1rem solid var(--color-primary);
+	padding: .5rem;
+}
+.form__campo__label--area{
+	height:10rem;
+	resize:none;
+}
+
+@media (min-width:768px){
+	.form__campo{
+	display:flex;
+	margin:2rem 0;
+	}
+	.form__campo__label{
+	flex: 0 0 9rem;
+	}
+	.form__campo__input{
+	flex: 1;
+	}
+}

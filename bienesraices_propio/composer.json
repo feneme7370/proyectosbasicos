@@ -1,0 +1,19 @@
+{
+    "name": "feneme/bienesraices_propio",
+    "description": "Proyecto de bienes raices",
+    "type": "proyect",
+    "autoload": {
+        "psr-4": {
+            "Feneme\\": "./class"
+        }
+    },
+    "authors": [
+        {
+            "name": "federico",
+            "email": "marascofederico95@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7"
+    }
+}

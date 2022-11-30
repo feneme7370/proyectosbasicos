@@ -1,0 +1,23 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "pagina de musica",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "tarea": "gulp primerTarea",
+    "css": "gulp css"
+  },
+  "keywords": [
+    "sass",
+    "gulp"
+  ],
+  "author": "federico marasco",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0"
+  }
+}

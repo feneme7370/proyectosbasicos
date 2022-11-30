@@ -1,0 +1,24 @@
+{
+    "empleados" : [
+        {
+            "id" : 1,
+            "nombre" : "fede",
+            "puesto" : "fullstack"
+        },
+        {
+            "id" : 2,
+            "nombre" : "cintia",
+            "puesto" : "contadora"
+        },
+        {
+            "id" : 3,
+            "nombre" : "agus",
+            "puesto" : "apicultor"
+        },
+        {
+            "id" : 4,
+            "nombre" : "vale",
+            "puesto" : "psicologa"
+        }
+    ]
+}
